@@ -1,3 +1,6 @@
+//VARIAVEIS//
+
+
 let TextoRef = document.getElementById("TextoRef");
 let Resultado = document.getElementById("Resultado");
 let Entrada = document.getElementById("Entrada");
@@ -7,6 +10,11 @@ const Frases = [["Frase 1", "Frase 1 parte 2"], ["Frase 2", "Frase 2 parte 2"]];
 let indiceFrase = Math.floor(Math.random() * Frases.length);
 let indiceTrecho = 0; 
 let Segundos = 60;
+
+
+//FUNÇÕES//
+
+
 function EscolherFrase() {
   TextoRef.textContent = Frases[indiceFrase][indiceTrecho]; 
 };
@@ -14,6 +22,15 @@ function EscolherFrase() {
 function AtualizarTextoFundo () {
     TextoFundo.textContent=Frases[indiceFrase][indiceTrecho]
 };
+
+function Perder() {
+  
+}
+
+
+
+//EVENT LISTENERS//
+
 
 document.addEventListener("DOMContentLoaded", EscolherFrase);
 document.addEventListener("DOMContentLoaded", AtualizarTextoFundo);
@@ -44,15 +61,12 @@ Entrada.addEventListener("click", () => {
   let ContadorTempo = setInterval (() =>{
     Segundos-=1
     Temporizador.textContent=Segundos + "s"
+    if (Segundos===0) {
+      Perder();
+    }
   }, 1000);
 
 }, {once: true});
-
-
-
-
-
-
 
 
 Entrada.addEventListener("click", () => {
