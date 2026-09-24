@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="Jogo">
+      <p id="TextoRef">hello word!</p>
+      <p id="TextoFundo" class="Entrada"></p>
+      <textarea id="Entrada" class="Entrada"></textarea>
+      <p id="Resultado">resultado</p>
+    </div>
+    <p id="Temporizador"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

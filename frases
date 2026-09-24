@@ -1,0 +1,309 @@
+Ahhh, agora entendi perfeitamente 😭\
+ Você quer **blocos grandes de texto em português**, não frases isoladas — e quer manter a ideia de **trava-línguas**, com textos que tenham palavras difíceis, repetições, sons parecidos e bastante conteúdo para testar o jogo.
+
+```
+const textos = [
+  `
+    O rato roeu a roupa do rei de Roma enquanto a rainha, muito irritada,
+    reclamava que ninguém conseguia recuperar a roupa rasgada. O rei,
+    preocupado com o rasgo, chamou o alfaiate mais rápido do reino, que
+    trouxe retalhos vermelhos, roxos, verdes e dourados. O alfaiate tentou
+    remendar a roupa, mas o rato retornou, correu pelo corredor, derrubou
+    três rolos de tecido e desapareceu atrás de uma velha estante. Quando
+    finalmente encontraram o rato, descobriram que ele havia escondido
+    dezenas de pequenos pedaços de tecido dentro de uma caixa.
+  `,
+
+  `
+    Três pratos de trigo para três tigres tristes foram preparados pelo
+    cozinheiro que trabalhava atrás da terceira porta da cozinha. Os três
+    tigres, entretanto, estavam tão famintos que começaram a reclamar dos
+    pratos antes mesmo de provarem a comida. O primeiro tigre queria trigo
+    torrado, o segundo queria trigo triturado e o terceiro queria trigo
+    temperado. O cozinheiro tentou preparar os três pratos ao mesmo tempo,
+    mas tropeçou no tapete, derrubou o trigo e acabou criando uma enorme
+    confusão na cozinha.
+  `,
+
+  `
+    O peito do pé do Pedro é preto porque Pedro pisou numa poça de tinta
+    preta enquanto procurava uma pequena pedra perdida. A pedra, porém,
+    estava perto da porta preta de uma pequena oficina. Pedro procurou a
+    pedra perto da porta, atrás da porta, embaixo da porta e até dentro
+    de uma caixa preta. Depois de procurar por quase uma hora, encontrou
+    a pedra exatamente onde havia começado a procurar. Pedro pegou a pedra,
+    limpou o pé e percebeu que havia deixado uma trilha preta por toda a
+    oficina.
+  `,
+
+  `
+    A aranha arranha a rã e a rã arranha a aranha porque a aranha achou
+    que a rã havia roubado sua pequena folha. A rã, por sua vez, achou
+    que a aranha havia escondido seu brinquedo favorito. As duas passaram
+    a manhã inteira discutindo sobre quem havia escondido o quê, enquanto
+    uma segunda aranha observava tudo de cima de uma árvore. No fim da
+    tarde, descobriram que nenhuma das duas havia roubado coisa alguma.
+    O vento simplesmente carregara a folha para longe e o brinquedo havia
+    ficado preso entre duas pedras.
+  `,
+
+  `
+    O sabiá não sabia que o sábio sabia que o sabiá sabia assobiar.
+    Durante toda a manhã, o sábio ficou sentado sob uma árvore ouvindo
+    o sabiá assobiar. O pássaro assobiava tão bem que todos os animais
+    paravam para escutar. O sábio então começou a assobiar também, mas
+    o sabiá ficou confuso porque nunca tinha ouvido um humano assobiar
+    daquela maneira. Depois de alguns minutos, os dois começaram uma
+    espécie de competição de assobios. Quem passava pela estrada pensava
+    que havia uma música escondida dentro da floresta.
+  `,
+
+  `
+    Num ninho de mafagafos havia sete mafagafinhos. Quando os sete
+    mafagafinhos acordaram, perceberam que o ninho estava completamente
+    bagunçado. Um mafagafinho havia perdido uma pena, outro havia
+    derrubado uma semente, três estavam procurando um pequeno galho e
+    os outros dois discutiam sobre quem deveria limpar o ninho. A mãe
+    mafagafo voltou ao entardecer e encontrou os sete mafagafinhos
+    correndo de um lado para o outro. Ela respirou fundo, olhou para a
+    bagunça e perguntou quem havia prometido organizar o ninho antes
+    que ela voltasse.
+  `,
+
+  `
+    A vaca malhada foi molhada por outra vaca molhada e malhada durante
+    uma manhã de chuva. As duas vacas malhadas ficaram completamente
+    encharcadas e decidiram procurar abrigo perto de um velho celeiro.
+    Quando chegaram ao celeiro, encontraram mais três vacas malhadas,
+    todas molhadas, tentando entrar pela mesma porta estreita. As cinco
+    vacas ficaram presas na entrada porque nenhuma queria dar passagem.
+    Depois de muito empurra-empurra, uma delas saiu pela porta dos fundos,
+    seguida pelas outras. No final, todas acabaram ainda mais molhadas
+    do que estavam antes.
+  `,
+
+  `
+    O tempo perguntou ao tempo quanto tempo o tempo tem. O tempo respondeu
+    que o tempo tem tanto tempo quanto o próprio tempo consegue contar.
+    Mas o relógio, que estava ouvindo a conversa, discordou e disse que
+    tempo não pode ser contado apenas pelos ponteiros. Segundo o relógio,
+    também existem o tempo da espera, o tempo da chegada, o tempo da
+    partida e o tempo que passa despercebido. O tempo ficou pensativo,
+    olhou para o relógio e perguntou quanto tempo ainda faltava para
+    terminar aquela conversa. O relógio respondeu que ninguém sabia.
+  `,
+
+  `
+    A Iara agarra e amarra a rara arara que havia encontrado uma pequena
+    garrafa perto da margem do rio. A arara tentou escapar voando para
+    uma árvore alta, mas a Iara chamou seu nome e pediu que ela esperasse.
+    A arara voltou lentamente e contou que havia encontrado a garrafa
+    dentro de um barco abandonado. Dentro da garrafa havia um papel
+    dobrado com uma mensagem escrita em tinta azul. A mensagem dizia que
+    quem encontrasse aquele papel deveria procurar uma árvore com três
+    raízes expostas e uma pedra redonda ao lado.
+  `,
+
+  `
+    O doce perguntou ao doce qual era o doce mais doce. O doce respondeu
+    que o doce mais doce era aquele que tivesse sido preparado com cuidado,
+    paciência e bastante açúcar. O confeiteiro, porém, discordou e disse
+    que um doce muito doce pode acabar sendo menos gostoso do que um doce
+    equilibrado. Então ele preparou um doce de morango, um doce de limão,
+    um doce de chocolate e um doce de caramelo. Todos provaram os quatro
+    doces e começaram uma longa discussão sobre qual deles era realmente
+    o mais doce. No final, ninguém conseguiu chegar a uma conclusão.
+  `,
+
+  `
+    Quem a paca cara compra, paca cara pagará. Essa era a regra escrita
+    na porta da pequena loja do senhor Paulo. Paulo vendia pacas de
+    diferentes tamanhos e dizia que cada paca possuía um preço proporcional
+    ao tamanho, à aparência e à quantidade de manchas. Um cliente comprou
+    uma paca cara achando que estava fazendo um ótimo negócio. No dia
+    seguinte, descobriu que havia comprado a paca mais cara da cidade.
+    Voltou à loja para reclamar, mas Paulo simplesmente apontou para a
+    placa e perguntou se o cliente não havia lido a regra antes de comprar.
+  `,
+
+  `
+    Pedro pregou um prego na porta preta enquanto Paulo preparava uma
+    pequena placa para colocar sobre a parede. O primeiro prego entortou,
+    o segundo quebrou e o terceiro desapareceu atrás de uma pilha de
+    caixas. Pedro procurou o prego perdido durante quinze minutos, mas
+    Paulo encontrou o pequeno objeto imediatamente. O problema é que
+    agora ninguém sabia onde estava o martelo. Pedro procurou perto da
+    porta, Paulo procurou perto da parede e ambos procuraram dentro das
+    caixas. Depois de muita procura, descobriram que o martelo estava
+    exatamente nas mãos de Pedro.
+  `,
+
+  `
+    A bruxa branca preparou uma grande bandeja de biscoitos brilhantes
+    enquanto três pequenos bruxos brincavam perto da biblioteca. Cada
+    biscoito tinha uma cor diferente e produzia um pequeno brilho quando
+    alguém dizia seu nome. O biscoito azul brilhava quando alguém dizia
+    "azul", o vermelho brilhava quando alguém dizia "vermelho" e o branco
+    brilhava quando alguém dizia "branco". As crianças começaram a repetir
+    as palavras cada vez mais rápido até que todos os biscoitos começaram
+    a brilhar ao mesmo tempo. A biblioteca inteira ficou iluminada como
+    se fosse dia.
+  `,
+
+  `
+    O rato rápido correu pelo corredor, passou pela cozinha, contornou
+    a cadeira quebrada e entrou numa pequena sala cheia de caixas.
+    Dentro da primeira caixa havia roupas velhas. Na segunda havia livros.
+    Na terceira havia brinquedos. Na quarta havia apenas uma pequena chave.
+    O rato pegou a chave e saiu correndo pelo corredor novamente. Ninguém
+    sabia por que um rato precisava de uma chave, mas todos começaram a
+    segui-lo. Ele correu até uma porta escondida, colocou a chave na
+    fechadura e abriu uma passagem que ninguém havia visto antes.
+  `,
+
+  `
+    Cinco cães caçaram cinco coelhos cansados perto de cinco colinas
+    cobertas de capim. Os coelhos correram para o norte, os cães correram
+    para o sul e todos acabaram se encontrando no mesmo campo. Os cães
+    ficaram confusos porque esperavam encontrar os coelhos escondidos,
+    enquanto os coelhos ficaram confusos porque esperavam encontrar uma
+    toca. Depois de alguns minutos, todos perceberam que estavam perdidos.
+    Então os cinco cães e os cinco coelhos decidiram seguir juntos pela
+    mesma estrada até encontrar o caminho de volta para casa.
+  `,
+
+  `
+    Clara criou croquetes crocantes com creme, cebola, cenoura e queijo.
+    Ela colocou os croquetes cuidadosamente sobre uma grande bandeja e
+    levou tudo para a cozinha. Quando voltou, percebeu que três croquetes
+    haviam desaparecido. Clara procurou atrás da cortina, dentro do armário
+    e embaixo da mesa. Finalmente encontrou três gatos escondidos atrás
+    de uma caixa, cada um segurando um croquete. Clara cruzou os braços,
+    olhou para os gatos e perguntou quem havia permitido que eles comessem
+    seus croquetes. Os gatos permaneceram em silêncio.
+  `,
+
+  `
+    Quatro quadrados quebrados ficaram quietos no quarto enquanto o quinto
+    quadrado era carregado lentamente pelo corredor. O quarto estava cheio
+    de quadros, caixas quadradas, pequenos quadrinhos e quatro grandes
+    almofadas quadradas. Ninguém sabia por que havia tantos objetos
+    quadrados naquele lugar. O dono da casa dizia que gostava de coisas
+    quadradas porque eram fáceis de organizar. O problema era que nada
+    estava realmente organizado. Havia quadrados sobre quadrados, caixas
+    dentro de caixas e quadros encostados uns nos outros.
+  `,
+
+  `
+    A babá baba enquanto o bebê bebe uma bebida de banana bem gelada.
+    A bebida foi preparada pela avó do bebê, que colocou bananas maduras,
+    leite, mel e algumas pedras de gelo dentro do liquidificador. O bebê
+    gostou tanto da bebida que pediu mais, mas a babá percebeu que a
+    garrafa estava vazia. Então preparou outra porção enquanto o bebê
+    observava tudo sentado na cadeira. Quando a bebida ficou pronta,
+    o bebê bateu palmas, a babá riu e a avó apareceu na porta perguntando
+    por que todos estavam fazendo tanto barulho naquela manhã.
+  `,
+
+  `
+    Pinga a pipa dentro da pia, pia a pipa, pinga a pipa. A pipa pequena
+    havia caído do céu durante uma tarde de vento forte e acabou presa
+    dentro da pia de uma casa abandonada. Um menino encontrou a pipa,
+    puxou a linha e tentou tirá-la dali. Porém, quanto mais puxava,
+    mais a linha se enrolava. Ele chamou seu irmão, que chamou a vizinha,
+    que chamou o dono da casa. Depois de quase uma hora tentando resolver
+    o problema, todos descobriram que bastava levantar a pipa pela parte
+    de cima para retirá-la facilmente.
+  `,
+
+  `
+    Se o papa papasse papa, se o papa papasse pão, o papa paparia papa
+    enquanto o padeiro prepararia pão para o papa. Mas como o papa não
+    queria papa naquele dia, pediu ao padeiro apenas um pedaço de pão
+    quente. O padeiro, porém, havia preparado uma enorme panela de papa
+    e não sabia o que fazer com tanta comida. Então chamou os vizinhos,
+    chamou os amigos e chamou até o cachorro da rua. No fim da tarde,
+    toda a papa havia desaparecido e ninguém conseguiu descobrir quem
+    havia comido a última colherada.
+  `,
+
+  `
+    A arara rara encontrou uma barata dentro de uma jarra amarela.
+    A barata tentou sair da jarra, mas a arara colocou a jarra perto da
+    janela e ficou observando. A barata correu para a borda, escorregou,
+    voltou para o fundo e tentou subir novamente. Depois de várias
+    tentativas, conseguiu escapar e correu rapidamente para baixo da mesa.
+    A arara ficou olhando para a jarra vazia, aparentemente surpresa.
+    Naquele momento, uma segunda barata apareceu atrás dela.
+  `,
+
+  `
+    O príncipe procurou o próprio prato preto por todo o palácio porque
+    precisava dele para uma cerimônia importante. Procurou na cozinha,
+    procurou no quarto, procurou perto da praça e perguntou até mesmo
+    ao padeiro. Ninguém havia visto o prato. Finalmente, quando retornou
+    ao salão principal, percebeu que estava segurando o prato o tempo
+    inteiro. O príncipe ficou tão envergonhado que decidiu nunca mais
+    procurar alguma coisa sem primeiro verificar se já estava segurando
+    aquilo que procurava.
+  `,
+
+  `
+    A pequena tartaruga atravessou lentamente a trilha enquanto três
+    passarinhos tagarelavam sobre o tamanho da árvore mais alta da floresta.
+    Um dizia que a árvore tinha cem metros, outro dizia que tinha duzentos
+    e o terceiro afirmava que a árvore chegava até as nuvens. A tartaruga
+    ouviu a conversa inteira sem dizer nada. Quando finalmente chegou ao
+    outro lado da trilha, olhou para os três pássaros e perguntou por que
+    eles discutiam tanto sobre uma árvore que nenhum deles havia medido.
+    Os três ficaram em silêncio.
+  `,
+
+  `
+    O velho vendedor vendia velhas velas verdes, violetas, vermelhas e
+    douradas. Cada vela possuía um cheiro diferente e cada cliente tinha
+    uma preferência. Alguns queriam velas verdes, outros preferiam
+    violetas e havia quem procurasse exclusivamente as velas vermelhas.
+    Um visitante perguntou se o vendedor também vendia velas azuis.
+    O velho respondeu que sim, mas que as velas azuis ficavam guardadas
+    numa velha caixa atrás da última prateleira. O visitante procurou,
+    procurou e procurou, mas encontrou apenas uma pequena vela roxa.
+  `,
+
+  `
+    Três tigres tristes tropeçaram no trilho enquanto tentavam transportar
+    três grandes sacos de trigo. O primeiro tigre carregava o saco mais
+    pesado, o segundo carregava o saco mais comprido e o terceiro carregava
+    o saco mais estranho. Quando chegaram ao final do trilho, descobriram
+    que haviam seguido pelo caminho errado. Voltaram lentamente, passaram
+    pelo mesmo trilho, tropeçaram nas mesmas pedras e chegaram novamente
+    ao ponto de partida. Depois de tanta confusão, decidiram simplesmente
+    sentar e comer o trigo que haviam carregado.
+  `,
+
+  `
+    A chuva chegou de repente, trazendo vento, trovões e uma quantidade
+    enorme de folhas voando pela rua. O menino tentou fechar a janela,
+    mas uma rajada de vento abriu a janela novamente. Tentou fechar a porta,
+    mas outra rajada empurrou a porta para o outro lado. Então pegou um
+    pedaço de madeira, colocou atrás da porta e finalmente conseguiu
+    mantê-la fechada. Quando tudo parecia resolvido, percebeu que havia
+    deixado uma janela aberta no andar de cima. Respirou fundo, pegou o
+    casaco e começou tudo novamente.
+  `,
+
+  `
+    No mercado da cidade havia uma barraca cheia de frutas frescas,
+    flores coloridas, folhas verdes e pequenos frascos de temperos.
+    A vendedora anunciava seus produtos em voz alta enquanto os clientes
+    caminhavam de um lado para o outro procurando os melhores preços.
+    Um senhor pediu seis maçãs, sete bananas e oito laranjas. A vendedora
+    anotou tudo rapidamente, mas entregou sete maçãs, seis bananas e oito
+    laranjas. O senhor percebeu a troca, começou a rir e perguntou se
+    aquilo era uma promoção especial. A vendedora respondeu que talvez
+    fosse, mas que ela mesma ainda estava tentando descobrir.
+  `
+];
+```
+
+ Aí sim são **textos grandes**, mas mantendo aquele estilo de **trava-língua**, repetição de sons e palavras parecidas — ótimo para colocar como textos aleatórios no jogo e também para testar caixas de diálogo, rolagem e limite de caracteres.
