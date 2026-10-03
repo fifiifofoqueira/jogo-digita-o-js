@@ -3,16 +3,17 @@ Ahhh, agora entendi perfeitamente 😭\
 
 ```
 const textos = [
-  `
-    O rato roeu a roupa do rei de Roma enquanto a rainha, muito irritada,
-    reclamava que ninguém conseguia recuperar a roupa rasgada. O rei,
-    preocupado com o rasgo, chamou o alfaiate mais rápido do reino, que
-    trouxe retalhos vermelhos, roxos, verdes e dourados. O alfaiate tentou
-    remendar a roupa, mas o rato retornou, correu pelo corredor, derrubou
-    três rolos de tecido e desapareceu atrás de uma velha estante. Quando
-    finalmente encontraram o rato, descobriram que ele havia escondido
-    dezenas de pequenos pedaços de tecido dentro de uma caixa.
-  `,
+ [
+        "O rato roeu a roupa do rei de Roma enquanto a rainha, muito irritada,",
+        " reclamava que ninguém conseguia recuperar a roupa rasgada. O rei,",
+        " preocupado com o rasgo, chamou o alfaiate mais rápido do reino, que",
+        " trouxe retalhos vermelhos, roxos, verdes e dourados. O alfaiate tentou",
+        " remendar a roupa, mas o rato retornou, correu pelo corredor, derrubou",
+        " três rolos de tecido e desapareceu atrás de uma velha estante. Quando",
+        " finalmente encontraram o rato, descobriram que ele havia escondido",
+        " dezenas de pequenos pedaços de tecido dentro de uma caixa."
+ ],
+
 
   `
     Três pratos de trigo para três tigres tristes foram preparados pelo
