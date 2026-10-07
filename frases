@@ -4,40 +4,30 @@ Ahhh, agora entendi perfeitamente 😭\
 ```
 const textos = [
  [
-        "O rato roeu a roupa do rei de Roma enquanto a rainha, muito irritada,",
-        " reclamava que ninguém conseguia recuperar a roupa rasgada. O rei,",
-        " preocupado com o rasgo, chamou o alfaiate mais rápido do reino, que",
-        " trouxe retalhos vermelhos, roxos, verdes e dourados. O alfaiate tentou",
-        " remendar a roupa, mas o rato retornou, correu pelo corredor, derrubou",
-        " três rolos de tecido e desapareceu atrás de uma velha estante. Quando",
-        " finalmente encontraram o rato, descobriram que ele havia escondido",
-        " dezenas de pequenos pedaços de tecido dentro de uma caixa."
+    "O rato roeu a roupa do rei de Roma enquanto a rainha, muito irritada, reclamava que ninguém conseguia recuperar a roupa rasgada.",
+    "O rei, preocupado com o rasgo, chamou o alfaiate mais rápido do reino, que trouxe retalhos vermelhos, roxos, verdes e dourados. ",
+    "O alfaiate tentou remendar a roupa, mas o rato retornou, correu pelo corredor, derrubou três rolos de tecido e desapareceu atrás de uma velha estante.", 
+    "Quando finalmente encontraram o rato, descobriram que ele havia escondido dezenas de pequenos pedaços de tecido dentro de uma caixa."
  ],
 
 
-  `
-    Três pratos de trigo para três tigres tristes foram preparados pelo
-    cozinheiro que trabalhava atrás da terceira porta da cozinha. Os três
-    tigres, entretanto, estavam tão famintos que começaram a reclamar dos
-    pratos antes mesmo de provarem a comida. O primeiro tigre queria trigo
-    torrado, o segundo queria trigo triturado e o terceiro queria trigo
-    temperado. O cozinheiro tentou preparar os três pratos ao mesmo tempo,
-    mas tropeçou no tapete, derrubou o trigo e acabou criando uma enorme
+  [
+    "Três pratos de trigo para três tigres tristes foram preparados pelo cozinheiro que trabalhava atrás da terceira porta da cozinha.", 
+    "Os três tigres, entretanto, estavam tão famintos que começaram a reclamar dos pratos antes mesmo de provarem a comida.", 
+    "O primeiro tigre queria trigo torrado, o segundo queria trigo triturado e o terceiro queria trigo temperado.", 
+    "O cozinheiro tentou preparar os três pratos ao mesmo tempo, mas tropeçou no tapete, derrubou o trigo e acabou criando uma enorme
     confusão na cozinha.
-  `,
+  ],
 
-  `
-    O peito do pé do Pedro é preto porque Pedro pisou numa poça de tinta
-    preta enquanto procurava uma pequena pedra perdida. A pedra, porém,
-    estava perto da porta preta de uma pequena oficina. Pedro procurou a
-    pedra perto da porta, atrás da porta, embaixo da porta e até dentro
-    de uma caixa preta. Depois de procurar por quase uma hora, encontrou
-    a pedra exatamente onde havia começado a procurar. Pedro pegou a pedra,
-    limpou o pé e percebeu que havia deixado uma trilha preta por toda a
-    oficina.
-  `,
+  [
+    "O peito do pé do Pedro é preto porque Pedro pisou numa poça de tinta preta enquanto procurava uma pequena pedra perdida.", 
+    "A pedra, porém, estava perto da porta preta de uma pequena oficina.", 
+    "Pedro procurou apedra perto da porta, atrás da porta, embaixo da porta e até dentro de uma caixa preta.", 
+    "Depois de procurar por quase uma hora, encontrou a pedra exatamente onde havia começado a procurar.",
+    "Pedro pegou a pedra, limpou o pé e percebeu que havia deixado uma trilha preta por toda a oficina."
+  ],
 
-  `
+  [
     A aranha arranha a rã e a rã arranha a aranha porque a aranha achou
     que a rã havia roubado sua pequena folha. A rã, por sua vez, achou
     que a aranha havia escondido seu brinquedo favorito. As duas passaram
@@ -46,7 +36,7 @@ const textos = [
     tarde, descobriram que nenhuma das duas havia roubado coisa alguma.
     O vento simplesmente carregara a folha para longe e o brinquedo havia
     ficado preso entre duas pedras.
-  `,
+  ],
 
   `
     O sabiá não sabia que o sábio sabia que o sabiá sabia assobiar.
