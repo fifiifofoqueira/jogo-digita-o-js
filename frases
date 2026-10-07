@@ -15,8 +15,7 @@ const textos = [
     "Três pratos de trigo para três tigres tristes foram preparados pelo cozinheiro que trabalhava atrás da terceira porta da cozinha.", 
     "Os três tigres, entretanto, estavam tão famintos que começaram a reclamar dos pratos antes mesmo de provarem a comida.", 
     "O primeiro tigre queria trigo torrado, o segundo queria trigo triturado e o terceiro queria trigo temperado.", 
-    "O cozinheiro tentou preparar os três pratos ao mesmo tempo, mas tropeçou no tapete, derrubou o trigo e acabou criando uma enorme
-    confusão na cozinha.
+    "O cozinheiro tentou preparar os três pratos ao mesmo tempo, mas tropeçou no tapete, derrubou o trigo e acabou criando uma enorme confusão na cozinha."
   ],
 
   [
@@ -28,38 +27,25 @@ const textos = [
   ],
 
   [
-    A aranha arranha a rã e a rã arranha a aranha porque a aranha achou
-    que a rã havia roubado sua pequena folha. A rã, por sua vez, achou
-    que a aranha havia escondido seu brinquedo favorito. As duas passaram
-    a manhã inteira discutindo sobre quem havia escondido o quê, enquanto
-    uma segunda aranha observava tudo de cima de uma árvore. No fim da
-    tarde, descobriram que nenhuma das duas havia roubado coisa alguma.
-    O vento simplesmente carregara a folha para longe e o brinquedo havia
-    ficado preso entre duas pedras.
+    "A aranha arranha a rã e a rã arranha a aranha porque a aranha achou que a rã havia roubado sua pequena folha.",
+    "A rã, por sua vez, achou que a aranha havia escondido seu brinquedo favorito.",
+    "As duas passaram a manhã inteira discutindo sobre quem havia escondido o quê, enquanto uma segunda aranha observava tudo de cima de uma árvore.",
+    "No fim da tarde, descobriram que nenhuma das duas havia roubado coisa alguma.",
+    "O vento simplesmente carregara a folha para longe e o brinquedo havia ficado preso entre duas pedras."
   ],
 
-  `
-    O sabiá não sabia que o sábio sabia que o sabiá sabia assobiar.
-    Durante toda a manhã, o sábio ficou sentado sob uma árvore ouvindo
-    o sabiá assobiar. O pássaro assobiava tão bem que todos os animais
-    paravam para escutar. O sábio então começou a assobiar também, mas
-    o sabiá ficou confuso porque nunca tinha ouvido um humano assobiar
-    daquela maneira. Depois de alguns minutos, os dois começaram uma
-    espécie de competição de assobios. Quem passava pela estrada pensava
-    que havia uma música escondida dentro da floresta.
-  `,
+  [
+    "O sabiá não sabia que o sábio sabia que o sabiá sabia assobiar. Durante toda a manhã, o sábio ficou sentado sob uma árvore ouvindoo sabiá assobiar.",
+    "O pássaro assobiava tão bem que todos os animais paravam para escutar. O sábio então começou a assobiar também, mas o sabiá ficou confuso porque nunca tinha ouvido um humano assobiar daquela maneira.", 
+    "Depois de alguns minutos, os dois começaram uma espécie de competição de assobios. Quem passava pela estrada pensava que havia uma música escondida dentro da floresta."
+  ],
 
-  `
-    Num ninho de mafagafos havia sete mafagafinhos. Quando os sete
-    mafagafinhos acordaram, perceberam que o ninho estava completamente
-    bagunçado. Um mafagafinho havia perdido uma pena, outro havia
-    derrubado uma semente, três estavam procurando um pequeno galho e
-    os outros dois discutiam sobre quem deveria limpar o ninho. A mãe
-    mafagafo voltou ao entardecer e encontrou os sete mafagafinhos
-    correndo de um lado para o outro. Ela respirou fundo, olhou para a
-    bagunça e perguntou quem havia prometido organizar o ninho antes
-    que ela voltasse.
-  `,
+  [
+    "Num ninho de mafagafos havia sete mafagafinhos. Quando os sete mafagafinhos acordaram, perceberam que o ninho estava completamente bagunçado.",
+    "Um mafagafinho havia perdido uma pena, outro havia derrubado uma semente, três estavam procurando um pequeno galho",
+    "e os outros dois discutiam sobre quem deveria limpar o ninho. A mãe mafagafo voltou ao entardecer e encontrou os sete mafagafinhos correndo de um lado para o outro.", 
+    "Ela respirou fundo, olhou para a bagunça e perguntou quem havia prometido organizar o ninho antes que ela voltasse."
+  ],
 
   `
     A vaca malhada foi molhada por outra vaca molhada e malhada durante
